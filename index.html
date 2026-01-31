@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nekowrld Projeckt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'brand-yellow': '#ffe600' }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white font-sans">
+
+    <header class="flex justify-between items-center p-5 border-b-2 border-white sticky top-0 bg-black z-50">
+        <img 
+    src="mylogo.jpg" 
+    alt="Logo" 
+    class="w-[50px] h-[50px] object-contain rounded-full bg-white"
+    >
+        
+        <nav class="space-x-4">
+            <a href="#" class="text-white no-underline border border-white px-4 py-1 text-sm rounded-full hover:bg-white hover:text-black transition">Home</a>
+            <a href="#profile" class="text-white no-underline border border-white px-4 py-1 text-sm rounded-full hover:bg-white hover:text-black transition">Our Profile</a>
+            <a href="#" class="text-white no-underline border border-white px-4 py-1 text-sm rounded-full hover:bg-white hover:text-black transition">Gallery</a>
+        <a href="#" class="text-white no-underline border border-white px-4 py-1 text-sm rounded-full hover:bg-white hover:text-black transition">Contact Us</a>
+        
+        </nav>
+    </header>
+
+    <section class="p-10 border-b-2 border-white">
+        <span class="text-3xl font-bold tracking-wider">Nekowrld Projeckt</span>
+        <h1 class="text-2xl font-bold mb-2">Hi <span id="user-name">User</span>, Welcome To Our Gallery</h1>
+        <p class="text-gray-400 m-0">"Shooting every moments and details"</p>
+        
+        <img src="banner.jpg" alt="Company Banner" class="w-full h-[300px] object-cover mt-5 rounded-2xl border-2 border-white">
+    </section>
+
+    <section id="profile" class="p-10 border-b-2 border-white">
+        <div class="text-xl font-bold mb-8 text-brand-silver">Our Profile</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">About Nekowrld Projeckt</h2>
+                <p class="text-gray-300 mb-6">
+                    We are creative space dedicated to capturing the essence of automotive beauty and street culture. 
+                    We also believe in the power of visual storytelling.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Our Vision & Mission</h2>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><strong>Our vision is:</strong> To be the premier automotive photography archive.</li>
+                    <li><strong>Our mission is:</strong> Documenting cars and bikes culture with authenticity and style.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-10 border-b-2 border-white">
+        <div class="text-xl font-bold mb-8">Photo Gallery</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="LB WORKS Nissan Skyline GT-R (R34).jpg" alt="Gallery 1" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">LB WORKS Nissan Skyline GT-R (R34)</div>
+            </div>
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Dodge charger.jpg" alt="Gallery 2" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Dodge Charger SRT </div>
+            </div>
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Mercedes AMG CLK GTR LM.jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Mercedes Benz AMG CLK GTR LM</div>
+            </div>
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Mazda 787B.jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Mazda 787B</div>
+            </div><div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Ducati Superleggera V4 s.jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Ducati Superleggera V4S</div>
+            </div><div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="2024 BMW F 900 GS  Adventure .jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">2024 BMW F900 GS Adventure </div>
+            </div>
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Toyota Crown.jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Toyota Crown Atlethe</div>
+            </div>
+            <div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="Honda CBR250RR.jpeg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">Honda CBR-250RR</div>
+            </div><div class="text-center group">
+                <div class="overflow-hidden rounded-2xl border-2 border-white mb-3">
+                    <img src="2023 Ferrari SF90 Stradale.jpg" alt="Gallery 3" class="w-full h-64 object-cover hover:scale-110 transition duration-500 cursor-pointer">
+                </div>
+                <div class="text-sm font-bold text-gray-300">2023 Ferrari SF90 Stradale</div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+  <section class="p-10 border-b-2 border-white flex flex-col md:flex-row gap-12 items-center">
+        
+        <div class="flex-1 w-full">
+            <div class="text-xl font-bold mb-8">Leave us a comment</div>
+            <form name="commentForm" onsubmit="return validateCommentForm()" class="space-y-4">
+                <div class="flex items-center">
+                    <label class="w-32 font-bold text-sm">Username</label>
+                    <input type="text" name="username" placeholder="Username" class="w-full p-2 bg-transparent border border-gray-500 rounded text-white focus:border-white outline-none">
+                </div>
+                <div class="flex items-start">
+                    <label class="w-32 font-bold text-sm mt-2">Comment</label>
+                    <textarea name="usercomment" placeholder="Your comment" class="w-full h-24 p-2 bg-transparent border border-gray-500 rounded text-white focus:border-white outline-none resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full p-3 bg-gray-800 border border-gray-600 rounded hover:bg-gray-700 transition font-bold mt-4">Post Comment</button>
+            </form>
+        </div>
+
+        <div class="flex-1 w-full h-[300px]">
+            <img 
+                src="landscape.jpg" 
+                alt="Landscape.jpg" 
+                class="w-full h-full object-cover rounded-2xl border-2 border-white"
+            >
+            </div>
+
+    </section>
+    <section id="message-us" class="p-10 flex flex-col md:flex-row gap-12 bg-gray-900">
+
+        <div class="flex-1">
+
+            <div class="text-xl font-bold mb-8 text-white">Contact US!</div>
+
+           
+
+            <form name="messageForm" onsubmit="return validateMessageForm()" class="space-y-4">
+
+                <div class="flex items-center">
+
+                    <label class="w-32 font-bold text-sm">Full Name</label>
+
+                    <input type="text" name="fullname" placeholder="Full Name" class="w-full p-2 bg-transparent border border-gray-500 rounded text-white focus:border-brand-yellow outline-none">
+                </div>
+                <div class="flex items-center">
+                    <label class="w-32 font-bold text-sm">Email</label>
+                    <input type="email" name="email" placeholder="example@email.com" class="w-full p-2 bg-transparent border border-gray-500 rounded text-white focus:border-brand-yellow outline-none">
+                </div>
+                <div class="flex items-center">
+
+                    <label class="w-32 font-bold text-sm">Phone</label>
+
+                    <input type="tel" name="phone" placeholder="+62..." class="w-full p-2 bg-transparent border border-gray-500 rounded text-white focus:border-brand-yellow outline-none">
+                </div>
+                <div class="flex items-start">
+                    <label class="w-32 font-bold text-sm mt-2">Message</label>
+                    <textarea name="message" placeholder="Your private message..." class="w-full h-24 p-2 bg-transparent border border-gray-500 rounded text-white focus:border-brand-yellow outline-none resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full p-3 bg-brand-yellow text-black border border-brand-yellow rounded font-bold mt-4 hover:bg-white hover:border-white transition">Send Message</button>
+            </form>
+
+        </div>
+        <div class="flex-1">
+
+            <div id="message-result-box" class="h-full flex items-center justify-center text-gray-500 italic border border-gray-700 p-5 rounded">
+
+                Your message will appear here...
+            </div>
+        </div>
+
+    </section>
+    <footer class="text-right p-5 text-xs font-bold border-t border-white mt-auto">
+        Copyright © 2026 Nekowrld Projeckt. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
